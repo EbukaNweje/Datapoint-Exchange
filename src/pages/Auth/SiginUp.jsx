@@ -14,6 +14,19 @@ const SignUp = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const nav = useNavigate();
 
+  const handleSignUp = () => {
+    // Handle sign-up logic here
+    console.log("Sign-up details:", {
+      fullName,
+      email,
+      whatsapp,
+      password,
+      confirmPassword,
+      refCode,
+    });
+    nav("/auth/create-pin")
+  };
+
   return (
     <div
       className="flex h-screen w-full bg-cover bg-center bg-no-repeat"
@@ -124,7 +137,7 @@ const SignUp = () => {
             />
           </div>
 
-          <button className="w-full mt-6 bg-blue-950 text-white py-3 rounded-lg font-semibold hover:bg-blue-600">
+          <button className="w-full mt-6 bg-blue-950 text-white py-3 rounded-lg font-semibold hover:bg-blue-600" onClick={handleSignUp}>
             Sign Up
           </button>
 

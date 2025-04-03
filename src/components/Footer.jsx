@@ -34,6 +34,8 @@ const Footer = () => {
           <p className="text-gray-400 text-sm cursor-pointer hover:text-red-500">Trade</p>
           <p className="text-gray-400 text-sm cursor-pointer hover:text-red-500">Ebook</p>
           <p className="text-gray-400 text-sm cursor-pointer hover:text-red-500">Gift-Card</p>
+          <p className="text-gray-400 text-sm cursor-pointer hover:text-red-500">Marketplace</p>
+          <p className="text-gray-400 text-sm cursor-pointer hover:text-red-500">Traning</p>
         </div>
 
         {/* Legal Section */}

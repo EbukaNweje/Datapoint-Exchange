@@ -135,7 +135,7 @@ const Login = () => {
             <a onClick={() => nav("/auth/forgot-password")} className="text-blue-600 cursor-pointer">Forgot Password?</a>
           </div>
           
-          <button className="w-full mt-6 bg-blue-950 text-white py-3 rounded-lg font-semibold hover:bg-blue-600">
+          <button className="w-full mt-6 bg-blue-950 text-white py-3 rounded-lg font-semibold hover:bg-blue-600" onClick={()=> nav("/dashboard")}>
             Continue
           </button>
           

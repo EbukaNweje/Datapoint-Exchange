@@ -19,8 +19,7 @@ const Header = () => {
       <div className='hidden md:flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8 text-black-400 text-base md:text-base lg:text-base'>
         <ul className='flex flex-wrap gap-4 md:gap-6 '>
           <li className='cursor-pointer hover:text-blue-950' onClick={() => nav('/')}>Home</li>
-          <li className='cursor-pointer hover:text-blue-950'>Marketplace</li>
-          <li className='cursor-pointer hover:text-blue-950'>Trade</li>
+          <li className='cursor-pointer hover:text-blue-950' onClick={() => nav('/auth/login')}>Trade</li>
           <li className='cursor-pointer hover:text-blue-950' onClick={() => nav('/faq')}>FAQs</li>
           <li className='cursor-pointer hover:text-blue-950'  onClick={() => nav('/contact-us')}>Contacts</li>
         </ul>
@@ -45,8 +44,7 @@ const Header = () => {
       <Drawer placement="right" onClose={() => setToggle(false)} open={toggle}>
         <div className="flex flex-col gap-6 text-lg text-black">
           <p className='cursor-pointer' onClick={() => {setToggle(false), nav('/')} }>Home</p>
-          <p className='cursor-pointer' onClick={() => setToggle(false)}>Marketplace</p>
-          <p className='cursor-pointer' onClick={() => setToggle(false)}>Trade</p>
+          <p className='cursor-pointer' onClick={() => {setToggle(false), nav('/auth/login')}}>Trade</p>
           <p className='cursor-pointer' onClick={() => {setToggle(false), nav('/faq')}}>FAQs</p>
           <p className='cursor-pointer' onClick={() => {setToggle(false), nav('/contact-us')}}>Contacts</p>
           <button className='bg-white text-blue-950 h-13 px-3 py-1 md:px-4 md:py-2 rounded-lg border border-blue-950 hover:bg-blue-950 hover:text-white transition' onClick={() => {setToggle(false), nav('/auth/login')}}>Login</button>

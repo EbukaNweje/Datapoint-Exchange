@@ -102,12 +102,12 @@ const CreateLoginPin = () => {
             </button>
           </div>
 
-          <button className="w-full mt-6 bg-blue-950 text-white py-3 rounded-lg font-semibold hover:bg-blue-600">
+          <button className="w-full mt-6 bg-blue-950 text-white py-3 rounded-lg font-semibold hover:bg-blue-600" onClick={() => nav("/dashboard")}>
             Set PIN
           </button>
 
           <p className="text-center mt-4 text-gray-600">
-            Skip for now? <span className="text-blue-600 cursor-pointer" onClick={() => nav("/")}>Go to Dashboard</span>
+            Skip for now? <span className="text-blue-600 cursor-pointer" onClick={() => nav("/dashboard")}>Go to Dashboard</span>
           </p>
         </div>
       </div>

@@ -10,6 +10,7 @@ import SignUp from './pages/Auth/SiginUp';
 import ForgotPassword from './pages/Auth/ForgotPassword';
 import ResetPassword from './pages/Auth/RestPassword';
 import CreateLoginPin from './pages/Auth/CreatePin';
+import Dashboard from './pages/UserDashBoard/Dashboard';
 
 const App = () => {
   return (
@@ -27,6 +28,9 @@ const App = () => {
         <Route path='/faq' element={<FAQ/>} />
         <Route path='/faq' element={<FAQ/>} />
         <Route path='/contact-us' element={<Contactus/>} />
+
+
+        <Route path='/dashboard' element={<Dashboard/>} />
       </Routes>
     </HashRouter>
   )

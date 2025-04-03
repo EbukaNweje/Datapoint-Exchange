@@ -1,8 +1,10 @@
 import React from 'react';
 import HeroImg from "../../assets/websitev1.png"; // Your image file
 import backgroundImage from "../../assets/bg.png"; // Background image file
+import { useNavigate } from 'react-router-dom';
 
 const HeroPage = () => {
+  const Nav = useNavigate();
   return (
     <div 
       className='w-full h-[650px] flex items-center justify-center md:h-[full] sm:h-[full] bg-cover bg-center bg-no-repeat' 
@@ -16,7 +18,7 @@ const HeroPage = () => {
                 <span className="text-red-500"> Datapoint-Exchange</span>
               </h1>
               <p className="text-base md:text-lg lg:text-xl">Buy, Sell, and Pay with Ease!</p>
-              <button className="mt-4 bg-red-600 text-white px-6 py-3 rounded-lg text-sm md:text-lg hover:bg-red-700 transition">
+              <button className="mt-4 bg-red-600 text-white px-6 py-3 rounded-lg text-sm md:text-lg hover:bg-red-700 transition" onClick={()=> Nav('/auth/login')}>
                 Pay Bill
               </button>
             </div>
