@@ -2,10 +2,11 @@ import React from "react";
 import Header from "../../components/Header";
 import Newsletter from "../../components/NewsLater";
 import Footer from "../../components/Footer";
+import AnimatedWrapper from "../../components/AnimatedWrapper";
 
 const AboutUs = () => {
   return (
-    <>
+    <AnimatedWrapper>
         <Header/>
        <div className="w-full bg-gray-100 py-12 px-6 md:px-12">
       {/* Header Section */}
@@ -68,7 +69,7 @@ const AboutUs = () => {
 
     <Newsletter />
     <Footer />
-    </>
+    </AnimatedWrapper>
   );
 };
 

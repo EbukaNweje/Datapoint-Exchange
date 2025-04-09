@@ -36,6 +36,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm cursor-pointer hover:text-red-500">Gift-Card</p>
           <p className="text-gray-400 text-sm cursor-pointer hover:text-red-500">Marketplace</p>
           <p className="text-gray-400 text-sm cursor-pointer hover:text-red-500">Traning</p>
+          <p className="text-gray-400 text-sm cursor-pointer hover:text-red-500">Logistics</p>
         </div>
 
         {/* Legal Section */}
@@ -53,8 +54,8 @@ const Footer = () => {
             <FaXTwitter className="text-white text-xl hover:text-red-500 cursor-pointer" />
             <IoLogoLinkedin className="text-white text-xl hover:text-red-500 cursor-pointer" />
           </div>
-          <p className="text-gray-400 text-sm mt-4">
-            No 138 kirikiri road Olodi apapa Lagos, Nigeria. <br />
+          <p className="text-gray-400 text-sm mt-4 capitalize">
+             Datapoint Microsystems Ltd· Address. 4 Ayanboye Street off Faramobi Ajike street Anthony Village, Lagos, Lagos, Nigeria <br />
             <a href="mailto:support@datapointexchange.com" className="text-red-500 hover:underline">support@datapointexchange.com</a> <br />
             <a href="tel:+2349169852080" className="text-red-500 hover:underline">+234 805 657 4122</a>
           </p>

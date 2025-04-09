@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import BG from "../../assets/bgnew.jpg";
+import AnimatedWrapper from "../../components/AnimatedWrapper";
 
 const SignUp = () => {
   const [fullName, setFullName] = useState("");
@@ -28,6 +29,7 @@ const SignUp = () => {
   };
 
   return (
+    <AnimatedWrapper>
     <div
       className="flex h-screen w-full bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${BG})`, backgroundSize: "cover" }}
@@ -147,6 +149,7 @@ const SignUp = () => {
         </div>
       </div>
     </div>
+    </AnimatedWrapper>
   );
 };
 

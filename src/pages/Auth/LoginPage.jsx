@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import BG from "../../assets/bgnew.jpg"
+import AnimatedWrapper from "../../components/AnimatedWrapper";
 
 const Login = () => {
   const [isPinMode, setIsPinMode] = useState(false);
@@ -26,6 +27,7 @@ const Login = () => {
   };
 
   return (
+    <AnimatedWrapper>
     <div className="flex h-screen w-full bg-cover bg-center bg-no-repeat"
     style={{
       backgroundImage:
@@ -145,6 +147,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+    </AnimatedWrapper>
   );
 };
 

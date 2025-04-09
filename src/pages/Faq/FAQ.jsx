@@ -3,6 +3,7 @@ import { MdOutlineKeyboardArrowUp, MdOutlineKeyboardArrowDown } from "react-icon
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Newsletter from "../../components/NewsLater";
+import AnimatedWrapper from "../../components/AnimatedWrapper";
 
 const FAQ = () => {
   const [dropdown, setDropdown] = useState(null);
@@ -45,7 +46,7 @@ const FAQ = () => {
   };
 
   return (
-    <>
+    <AnimatedWrapper>
       <Header />
       <div className="w-full bg-gray-50 pb-12">
         {/* Header Section */}
@@ -93,7 +94,7 @@ const FAQ = () => {
       </div>
       <Newsletter/>
       <Footer />
-    </>
+    </AnimatedWrapper>
   );
 };
 

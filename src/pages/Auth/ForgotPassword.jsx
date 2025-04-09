@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BG from "../../assets/bgnew.jpg";
+import AnimatedWrapper from "../../components/AnimatedWrapper";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
   const nav = useNavigate();
 
   return (
+    <AnimatedWrapper>
     <div
       className="flex h-screen w-full bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${BG})`, backgroundSize: "cover" }}
@@ -55,6 +57,7 @@ const ForgotPassword = () => {
         </div>
       </div>
     </div>
+    </AnimatedWrapper>
   );
 };
 

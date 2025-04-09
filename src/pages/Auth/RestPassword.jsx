@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import BG from "../../assets/bgnew.jpg";
+import AnimatedWrapper from "../../components/AnimatedWrapper";
 
 const ResetPassword = () => {
   const [password, setPassword] = useState("");
@@ -11,6 +12,7 @@ const ResetPassword = () => {
   const nav = useNavigate();
 
   return (
+    <AnimatedWrapper>
     <div
       className="flex h-screen w-full bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${BG})`, backgroundSize: "cover" }}
@@ -88,6 +90,7 @@ const ResetPassword = () => {
         </div>
       </div>
     </div>
+    </AnimatedWrapper>
   );
 };
 

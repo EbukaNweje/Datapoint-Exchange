@@ -7,10 +7,11 @@ import { PiTiktokLogo, PiTelegramLogoDuotone } from "react-icons/pi";
 import Newsletter from "../../components/NewsLater";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import AnimatedWrapper from "../../components/AnimatedWrapper";
 
 const ContactUs = () => {
   return (
-   <>
+   <AnimatedWrapper>
    <Header />
      <div className="w-full bg-gray-50 py-12">
       <div className="container mx-auto px-4 sm:px-8 lg:px-16">
@@ -104,7 +105,7 @@ const ContactUs = () => {
     </div>
         <Newsletter/>
         <Footer/>
-   </>
+   </AnimatedWrapper>
   );
 };
 
